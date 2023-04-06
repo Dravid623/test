@@ -1,0 +1,13 @@
+git init
+git status
+git add .
+git commit -m "message"
+git push -u origin master
+
+for new directory
+git init
+git status
+git add .
+git commit -m "message"
+git remote add origin <git URL>
+git push -u origin < branch/master>
