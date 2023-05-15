@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background: green;">hello world</h1>
+    <h2 style="background-color: blueviolet;">client side output is:</h2>
+    <div style= "background-color: blueviolet;" id="output"></div>
+<div style= "background-color: rgb(14, 235, 11);" id="serverOutput">server side output---<br></div>
+    <script src="client.js"></script>
+    <script>
+        fetch('http://localhost:3000')
+          .then(response => response.text())
+          .then(text => addToServerOutput(text));
+      </script>
+</body>
+</html>
